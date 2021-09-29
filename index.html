@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+	font:normal 12px "roboto", "돋움", dotum, Arial, Verdana, sans-serif;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+	font-weight:bold;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0;
+}
+
+figure {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	border: 0;
+	background-color: rgba(255, 255, 255, 0);
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-size: 12px;
+}
+
+body {
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    overflow: hidden;
+    /* display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(auto-fill, 280px);
+    grid-gap: 20px; */
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px; */
+}
+
+.container > .item {
+    margin: 10px;
+    float: left;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.item {
+    /* border: 1px solid orange; */
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.item > .wrap {
+    /* border: 1px solid yellow; */
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: block;
+}
+
+.item > .wrap figcaption {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap:hover figcaption {
+    opacity: 1;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+}
+
+.wrap:hover > img {
+    scale: 105%;
+    filter: saturate(180%) blur(10px);
+}
+
+.item .photo,figcaption {
+    /* border: 1px solid green; */
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+<ul class="container">
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Helvetica now.png" alt="">
+            <figcaption>
+                <h3>
+                    Helvetica now
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Jost.png" alt="">
+            <figcaption>
+                <h3>
+                    Jost*
+                </h3>
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Black Hans Sans.png" alt="">
+            <figcaption>
+                <h3>
+                    Black Hans Sans
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Intro.png" alt="">
+            <figcaption>
+                <h3>
+                    Intro
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Bebas neue.png" alt="">
+            <figcaption>
+                <h3>
+                    Bebas neue
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Emberly.png" alt="">
+            <figcaption>
+                <h3>
+                    Emberly
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Alaska.png" alt="">
+            <figcaption>
+                <h3>
+                    Alaska
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/val.png" alt="">
+            <figcaption>
+                <h3>
+                    Val
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Quentin.png" alt="">
+            <figcaption>
+                <h3>
+                    Quentin
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Medio.png" alt="">
+            <figcaption>
+                <h3>
+                    medio
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Playfair Display.png" alt="">
+            <figcaption>
+                <h3>
+                    Playfair Display
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Salome.png" alt="">
+            <figcaption>
+                <h3>
+                    Salome
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Coco.png" alt="">
+            <figcaption>
+                <h3>
+                    Coco
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Kings Gambit.png" alt="">
+            <figcaption>
+                <h3>
+                    King`s Gambit
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Metropolis.png" alt="">
+            <figcaption>
+                <h3>
+                    Metropolis
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Cinzel.png" alt="">
+            <figcaption>
+                <h3>
+                    Cinzel
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Inter+Facon.png" alt="">
+            <figcaption>
+                <h3>
+                    Inter & Facon
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Campton.gif" alt="">
+            <figcaption>
+                <h3>
+                    Campton
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Oswald.png" alt="">
+            <figcaption>
+                <h3>
+                    Oswald
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Poppins.png" alt="">
+            <figcaption>
+                <h3>
+                    Poppins
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Raleway.png" alt="">
+            <figcaption>
+                <h3>
+                    Raleway
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+        </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Source-Sans-Pro.png" alt="">
+            <figcaption>
+                <h3>
+                    Source Sans Pro
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Lato.png" alt="">
+            <figcaption>
+                <h3>
+                    Lato
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+    <li class="item">
+        <figure class="wrap">
+            <img class="photo" src="./image/Gmarket-Sans.png" alt="">
+            <figcaption>
+                <h3>
+                    Gmarket Sans
+                </h3>               
+            </figcaption>
+        </figure class="wrap">
+    </li>
+</ul>
+</body>
+<script>
+</script>
+</html>
